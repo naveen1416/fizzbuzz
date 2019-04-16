@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fizzbuzz task</title>
+<script>
+var output = '';
+  for (var i=1; i < 101; i++){
+    if (i % 15 == 0) 
+      output += "FizzBuzz " +'<br>';
+    else if(i % 3 == 0) output += "Fizz " +'<br>';
+    else if (i % 5 == 0) output += "Buzz " +'<br>';
+    else output+=i +'<br>';
+}
+var sol = document.write(output);
+document.getElementById("demo").innerHTML = sol;
+</script>
+</head>
+<body>
+<div id="demo"></div>
+</body>
+</html>
